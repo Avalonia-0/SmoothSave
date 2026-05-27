@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "async-world-save",
+	"version": "${version}",
+	"name": "Async World Save",
+	"description": "Offloads world save disk writes to a background thread, eliminating server freeze during auto-save.",
+	"authors": [
+		"Alonie"
+	],
+	"contact": {
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/async-world-save/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.alonie.aws.AsyncWorldSave"
+		]
+	},
+	"mixins": [
+		"async-world-save.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
